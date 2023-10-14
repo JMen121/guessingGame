@@ -20,20 +20,29 @@ public class GuessingGame {
 
 
         //Machine should input congratulations if achieved//
-        if (userAnswer == 22) ;
-        {
+        if (userAnswer == 22) {
             System.out.println("Wohoo! You're a whizz at this!");
 
-            //Machine should output whether it is high or low//
-        } else if (userAnswer > gameAnswer) {
+            //if useranswer is less 21,20 or 23,24 - almost there answer//
+        }else if(userAnswer >=20 && userAnswer <=24) {
+            System.out.println("Almost there pal! You've got this! Think Smart!");
+       //Machine should output whether it is high or low//
+        } else if(userAnswer >= gameAnswer) {
             System.out.println("Woah Tiger, that's a higher than my number!");
-        } else if (userAnswer < gameAnswer) {
+        } else if(userAnswer <= gameAnswer) {
             System.out.println("My number is higher than that!");
         }
-    }
-}
+
+        
 
 
-//if useranswer is less 21,20 or 23,24 - almost there answer//
+
+      /* else if (userAnswer > gameAnswer) System.out.println("Woah Tiger, that's a higher than my number!");
+            else if (userAnswer < gameAnswer) {
+                System.out.println("My number is higher than that!"); */
+            }
+        }
+
+
 
 
